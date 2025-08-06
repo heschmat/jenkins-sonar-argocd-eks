@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'maven:3.9-eclipse-temurin-17'
+      image 'ghcr.io/heschmat/jenkins-sonar-argocd-eks'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
   }
